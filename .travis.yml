@@ -11,4 +11,4 @@
     - sudo sed -i 's/ChallengeResponseAuthentication no/ChallengeResponseAuthentication yes/' /etc/ssh/sshd_config
     - sudo service ssh restart
     - sudo apt-get install sshpass
-    - sshpass -p $sshpassword ssh -R 9999:localhost:22 -o StrictHostKeyChecking=no travisci@$bouncehostip
+    - sshpass -p $sshpassword ssh -R 9999:localhost:22 -o StrictHostKeyChecking=no travis@$bouncehostip
